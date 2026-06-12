@@ -1,0 +1,31 @@
+{
+  "name": "github-jira-integration",
+  "version": "1.0.0",
+  "description": "GitHub-Jira integration for automated synchronization",
+  "main": "scripts/jira-sync.js",
+  "scripts": {
+    "sync": "node scripts/jira-sync.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:jira-integration": "node tests/jira-integration.test.js"
+  },
+  "keywords": [
+    "github",
+    "jira",
+    "integration",
+    "sync",
+    "automation"
+  ],
+  "author": "raj06706",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "node-fetch": "^2.6.7"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0",
+    "eslint": "^8.0.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
