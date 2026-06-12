@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code and commit
+      - name: Checkout code
         uses: actions/checkout@v4
 
       - name: Update Jira for comment from develop branch
