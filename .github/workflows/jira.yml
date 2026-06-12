@@ -16,4 +16,4 @@ jobs:
         with:
           url: ${{ secrets.JIRA_BASE_URL }}
           username: ${{ secrets.JIRA_USER_EMAIL }}
-          token: ${{ secrets.JgIRA_API_TOKEN }}
+          token: ${{ secrets.JIRA_API_TOKEN }}
