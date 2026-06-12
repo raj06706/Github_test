@@ -11,8 +11,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Update Jira for comments
-        uses: dodevops/jira-cloud-github-action@main
+      - name: Update Jira for comment from develop branch
+        uses: dodevops/jira-cloud-github-action@v0.1.0
         with:
           url: ${{ secrets.JIRA_BASE_URL }}
           username: ${{ secrets.JIRA_USER_EMAIL }}
