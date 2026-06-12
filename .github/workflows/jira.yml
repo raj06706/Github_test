@@ -11,7 +11,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Update Jira
+      - name: Update Jira issue
         uses: dodevops/jira-cloud-github-action@v0.1.0
         with:
           url: ${{ secrets.JIRA_BASE_URL }}
