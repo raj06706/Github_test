@@ -1,12 +1,19 @@
-name: Jira Basic Integration
+name: Jira Update
 
 on:
   push:
 
 jobs:
-  test:
+  jira-update:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+      - name: Checkout code
         uses: actions/checkout@v4
+
+      - name: Update Jira
+        uses: dodevops/jira-cloud-github-action@v1
+        with:
+          url: ${{ secrets.JIRA_BASE_URL }}
+          username: ${{ secrets.JIRA_USER_EMAIL }}
+          token: ${{ secrets.JIRA_API_TOKEN }}
