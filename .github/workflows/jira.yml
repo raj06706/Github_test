@@ -12,7 +12,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Update Jira
-        uses: dodevops/jira-cloud-github-action@v1
+        uses: raj06706/Github_test@v1
         with:
           url: ${{ secrets.JIRA_BASE_URL }}
           username: ${{ secrets.JIRA_USER_EMAIL }}
