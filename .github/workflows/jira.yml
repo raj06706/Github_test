@@ -8,10 +8,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: Checkout code from dev branch
         uses: actions/checkout@v4
 
-      - name: Update Jira for comment from develop branch
+      - name: Update Jira issue
         uses: dodevops/jira-cloud-github-action@v0.1.0
         with:
           url: ${{ secrets.JIRA_BASE_URL }}
